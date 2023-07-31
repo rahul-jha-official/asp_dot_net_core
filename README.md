@@ -160,3 +160,21 @@ Headers are categorized by context:</br>
 <ins>Response Headers:</ins> such as Connection, Server</br>
 <ins>Representation Headers:</ins> such as content-type, content-language</br>
 <ins>Payload Headers:</ins> such as ContentLength, transfer-encoding</br>
+</br></br>
+**Http statuses**</br>
+Http status represents the status of the RESTful service after HTTP Request is completed Status codes are represented as 3 digits, where the first digit represents the category:</br></br>
+****1xx:**** Informational Responses</br>
+****2xx:**** Successful Responses</br>
+****3xx:**** Redirection (action to be taken by browser or user)</br>
+****4xx:**** Invalid request by client, data incomplete or invalid</br>
+****5xx:**** Server-side error (API crash, misconfigurations, app pool shutdown)</br>
+</br></br>
+![image](https://github.com/rahul-jha-official/asp_dot_net_core/assets/138975150/a7297218-52cc-4094-8b06-b840648f93f7)
+</br></br>
+
+**HTTP Cookies**</br>
+•	Used to maintain the state or session between multiple HTTP communications</br>
+•	A Cookie is a small piece of data passed from server to user’s browser via the set-cookie response header</br>
+•	Cookies can also be restricted via the use of Secure attribute and HttpOnly Attribute, this is used to prevent Cross-site scripting attack (XSS)</br>
+•	Cookies are used mainly for Session Management, Personalization and Tracking</br>
+</br></br>
