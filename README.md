@@ -175,6 +175,8 @@ Http status represents the status of the RESTful service after HTTP Request is c
 </br></br>
 ![image](https://github.com/rahul-jha-official/asp_dot_net_core/assets/138975150/a7297218-52cc-4094-8b06-b840648f93f7)
 </br></br>
+![image](https://github.com/rahul-jha-official/asp_dot_net_core/assets/138975150/97ec1e18-f431-4019-a2b6-fe0dec27c563)
+
 
 **HTTP Cookies**</br>
 •	Used to maintain the state or session between multiple HTTP communications</br>
