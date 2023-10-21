@@ -67,10 +67,10 @@ ASP.NET Core is not an upgraded version of ASP.NET. ASP.NET Core is completely r
 A web application requires a server to in order to receive a request and send a reponse. <br/><br/>
 ![image](https://github.com/rahul-jha-official/asp_dot_net_core/assets/138975150/7ba5585a-1dab-44a2-9909-ef4ca004dff2)
 <br/>
-**Kestrel**
+**Kestrel**</br>
 Kestrel is the default Cross-Platform Http Server used in  ASP .Net Application. It acts as both Development Server as well the the real application Server. Kestrel does not support load balancing, URL rewriting command name. Kestrel act as intermediate between Local Network/Internet and Application. It receive the request and prepare an object with request details (called HttpContext) and send it to the application and receive the response from the application and send back to the Local Network/Internet.
 
-**Reverse Proxy Server (IIS, Ngnix and Apache)**
+**Reverse Proxy Server (IIS, Ngnix and Apache)**</br>
 Production Server IIS - Internet Information Services Benefits: Load Balancing, Caching, URL Rewriting, Decompressing the request, Authentication, Decryption of SSL Certificates
 <br/><br/>
 **IIS express**<br/>
