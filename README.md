@@ -92,7 +92,8 @@ In order to start the server app.Run() should be called.
 
  <br/><br/>
 **launchSettings.json file**</br>
-launchSettings.json is file which has the profiles configuration of the servers. The file is present in the ‘\Properties’ folder of the project.
+launchSettings.json is file which has the profiles configuration of the servers. The file is present in the ‘\Properties’ folder of the project. Profile is the collection of settings which are used to run the server.
+
 <table>
  <tr>
   <td>commandName</td>
