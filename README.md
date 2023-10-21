@@ -183,4 +183,91 @@ Http status represents the status of the RESTful service after HTTP Request is c
 •	A Cookie is a small piece of data passed from server to user’s browser via the set-cookie response header</br>
 •	Cookies can also be restricted via the use of Secure attribute and HttpOnly Attribute, this is used to prevent Cross-site scripting attack (XSS)</br>
 •	Cookies are used mainly for Session Management, Personalization and Tracking</br>
+</br>
+
+**HTTPS Vs HTTP/2 Vs HTTP/3**
+<table>
+ <thead>
+  <tr>
+   <th>HTTPS</th>
+   <th>HTTP/2</th>
+   <th>HTTP/3</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>S stands for Secure, which means the HTTP communication between the client (like browser) and the website will happen via a secure channel, using an SSL/TLS encryption protocol</td>
+   <td>HTTP/2 is a major revision of the HTTP, introduced in 2015</td>
+   <td>Though not officially announced, HTTP/3 is the 3rd major revision of the HTTP</td>
+  </tr>
+  <tr>
+   <td>TLS is the successor of SSL</td>
+   <td>Its purpose is to improve the web performance by decreasing latency</td>
+   <td>Introduces data transmission on a new transport protocol - Quic or (pronounced as Quick)</td>
+  </tr>
+  <tr>
+   <td>TLS v1.2 is the minimum recommended version of TLS that websites should use to maintain a secure website.</td>
+   <td>Over 97% of browsers now support HTTP/2</td>
+   <td>Quick UDP Internet Connections or Quic relies on UDP protocol rather than TCP</td>
+  </tr>
+  <tr>
+   <td>TLS v1.3 is the latest version.</td>
+   <td>Key Features Include: Multiplexing, Weighted Prioritization, Server Push, Headers Compression</td>
+   <td>Quic on UDP provides a faster and more efficient communication than TCP which leads to improved web performance and user experience</td>
+  </tr>
+  <tr>
+   <td>Your site, including your web API must always use HTTPS</td>
+   <td></td>
+   <td>Over 75% of browsers now support HTTP/3, more and more sites have started adopting it</td>
+  </tr>
+ </tbody>
+</table>
+
+**HTTP/2 Key Features**</br>
+Multiplexing: Request and Response messages can be transmitted between client and server via bidirectional and concurrent streams (Over the same TCP Connection)
+Weighted prioritization: streams can be assigned weighted value and dependency for the client to display the responses from the streams accordingly
+Server Push: When client requests a resource, the server can push extra resources to be cached on the client and used when needed 
+Headers Compression: using HPACK specification to compress HTTP headers to optimize streams multiplexing</br></br>
+
+**HTTP/3 Key Features**</br>
+•	Faster connection setup and reduced Round-Trip Time by combining the cryptographic and transport handshakes 
+•	With the use of Connection IDs, a communication can be maintained between client and server even when device’s network switches to another
+•	Solves the TCP head-of-line blocking issue: If a packet is lost, the streamaware Quic communication will know which stream is exactly loss and it will retransmit it
+•	Enhanced security with transport-level default encryption: which means connections will always be encrypted, which will include data and meta-data about the connection
 </br></br>
+
+**HTTP Request**</br>
+The Browser request to Server.
+General Syntax of HTTP Request
+ ![image](https://github.com/rahul-jha-official/asp_dot_net_core/assets/138975150/8442562d-bbb3-495f-a47a-9b8563347764)
+
+
+Sample Request
+ ![image](https://github.com/rahul-jha-official/asp_dot_net_core/assets/138975150/45212ab5-3ac3-4116-9b2d-3c927e895c89)
+
+**HTTP Request Headers**</br>
+![image](https://github.com/rahul-jha-official/asp_dot_net_core/assets/138975150/0fb458d5-926c-49d2-8689-4398fc0e8bdf)
+
+More on Header: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+![image](https://github.com/rahul-jha-official/asp_dot_net_core/assets/138975150/b66bf92d-0137-4624-8abb-27d996c739a3)
+
+**HTTP Request Methods**</br>
+![image](https://github.com/rahul-jha-official/asp_dot_net_core/assets/138975150/774065c9-8479-4013-85e5-94a1b71c9d46)
+Other Method: OPTIONS, TRACE, HEAD, TUNNEL
+
+**Get Vs Post**</br>
+![image](https://github.com/rahul-jha-official/asp_dot_net_core/assets/138975150/a0b6bb90-a255-462c-bf9c-bb87aad59726)
+
+**HTTP Response**</br>
+The Server response to the request of the Browser.
+General Syntax of HTTP Response
+![image](https://github.com/rahul-jha-official/asp_dot_net_core/assets/138975150/0e4cc7c0-5e6c-4620-b405-3379845b8185)
+Sample HTTP Response
+![image](https://github.com/rahul-jha-official/asp_dot_net_core/assets/138975150/897674ea-e09f-4a19-b499-cd9dd2b10041)
+
+**Response Start Line**</br>
+Includes HTTP version, status code and status description.
+HTTP Version: 1/1 | 2 | 3
+Status Code: 101 | 200 | 201 | 302 | 400 | 401 | 404 | 500
+Status Description: Switching Protocols | OK | Created | Found | Bad Request | Unauthorized | Not Found | Internal Server Error
+
